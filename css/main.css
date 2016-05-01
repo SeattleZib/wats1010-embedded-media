@@ -6,5 +6,341 @@
  *****************************************************************************/
 
  html {
-     color: green;
+     color: #22943F;   
  }
+/* Begin Body */
+ /* Background gradient at top of page from https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool */
+body {
+  font-family: fantasy;
+  font-size: 100%;
+  background: -moz-linear-gradient(top, #ffa853 0%, #fdf9bd 2%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffa853),color-stop(2%,#fdf9bd));
+  background: -webkit-linear-gradient(top, #ffa853 0%,#fdf9bd 2%);
+  background: -o-linear-gradient(top, #ffa853 0%,#fdf9bd 2%);
+  background: -ms-linear-gradient(top, #ffa853 0%,#fdf9bd 2%);
+  background: linear-gradient(top, #ffa853 0%,#fdf9bd 2%);
+  background-repeat: repeat-x;
+  text-decoration: none;
+  margin: 0;
+}
+
+/* End Body - changed: font, background information */
+
+/* Begin Heading for Monkaa */
+/* Added center alignment of header image, aligned title to center */
+
+#heading .brand {
+  text-align: center;
+  margin: 5px;
+}
+#heading .img {
+  position: absolute;
+  align-content: center;
+}
+/* Begin Subtitle  text alignment, color and font size */
+#heading .subtitle {
+  text-align: center;
+  color: #827C7C;
+  font-size: 20px;
+}
+/* End Heading */
+
+
+/* Begin navigation */
+    /* Removed bullets, added styling to navigation appearance */
+
+.main-nav {
+  list-style: none;
+  height: 20px;
+  top: 20px;
+  left: 2px;
+  text-decoration: none;
+}
+.main-nav ul {
+  list-style-type: none;
+  background-color: yellow;
+  padding: 0;
+  margin: 0;
+  height: auto;
+  width: auto; 
+  overflow: hidden;
+}
+.main-nav ul li {
+  float: left;
+}
+.main-nav li {
+  display: inline;
+  padding: 10px;
+  line-height: 10px;
+  text-decoration: none;
+}
+/* Display changed to inline; text centered; background color added; radius' added to top of border */
+.main-nav li a {
+  display: inline;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px 5px;
+  margin: 5px;
+  color: white;
+  font-size: 25px;
+  background-color:#20A040;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom: 1px dotted;
+}
+a:active {
+ background-color: #FBB55A; 
+ color: white;
+ font-size: bold;
+ opacity: 0.8; 
+}
+a:hover {
+  back-groundcolor: #0AEEFF;
+}
+/* End Main Navigation */
+
+
+/* Begin aside and social links section */
+
+#social h2 {
+  font-size: 25px;
+  margin: 15px;
+  padding: 5px;
+}
+
+/* Add styling to social media links */
+    /* Changed position, removed bullets, added hover color */
+ .social-links {
+  position: sticky;
+  list-style: none;
+}
+.social-links ul {
+  list-style-type: none;
+  margin: 10px;
+}
+.social-links ul li {
+  float: left;
+}
+.social-links li {
+  display: inline;
+}
+.social-links img {
+  text-decoration:none;
+  width: 35px;
+  height: 35px;
+  padding: 5px;
+}
+.social-links li a:active {
+  text-decoration: none;
+  color: #FBB55A;
+  width: 35px;
+  height: 35px;
+  padding: .5px
+}
+.social-links li a:hover {
+  background-color: #0AEEFF;
+} 
+
+/* End Social Media links;  */
+
+
+/* Begin #watch section */
+      /* Added margins, font size, padding, and download button */
+#watch {
+  margin: 10px;
+}
+#watch h3 {
+ font-size: 20px;
+ padding: 5px;
+ margin: 15px;
+}
+#watch p {
+  padding: 5px;
+}
+#watch .download-button {
+  margin: 10px;
+  background-color: #22943F; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+  /* End #watch section */
+
+
+  /* Begin #listen section */
+      /* Added margins, font size, padding, and download button */
+ #listen {
+  margin: 10px;
+}
+#listen h3 {
+ font-size: 20px;
+ padding: 5px;
+ margin: 15px;
+}
+#listen p {
+  padding: 5px;
+}
+#listen .download-button {
+  margin: 15px;
+  background-color: #22943F; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+} 
+  
+/* End #listen section */ 
+
+
+/*Begin #about section */
+
+#about {
+  margin: 20px;
+  clear: both;
+}
+#about ul li {
+  list-style: none;
+  line-height: 1.25;
+  font-size: 20px;
+}
+.icon {
+  float: left;
+  margin: 10px;
+}
+.lead {
+  color: blue;
+  font-size: 20px;
+  padding: 0px;
+}
+.lead p {
+  float: right;
+  padding: 15px; 
+  line-height: 2;
+}
+.lead::first-letter {
+  padding: 0;
+  font-size: 30px;
+  color: green; 
+}
+
+/* Style Weybec people */
+.weybec-people {
+  display: block;
+  float: left;
+  margin: 10px;
+  text-align: center;
+}
+.weybec-people img {
+  display: block;
+  float: left;
+  margin: 10px 20px 10px 10px;
+  padding: 10px;
+}
+.weybec-people ul {
+  padding: 20px;
+  margin: 20px;
+}
+.weybec-people li {
+  list-style: none;
+  display: inline-block;
+  float: left;
+  margin-left: 10px;
+  margin-right: 20px;
+  padding: 30px;
+}
+.weybec-people p {
+  margin: 10px;
+  padding: 20px;
+}
+
+/* End weybec people */
+
+
+/* Style footer */
+
+.footer {
+  margin:20px;
+  padding: 20px;
+  text-align: center;
+}
+.footer,
+.footer-text {
+  font-size: 12px;
+  text-align: center;
+}
+.footer-text p {
+  margin: 20px;
+  padding: 20px;
+}
+ 
+/* Insert bottom navigation - Copied .main-nav and renamed */
+.footer-nav {
+  list-style: none;
+  height: 20px;
+  top: 40px;
+  left: 2px;
+  text-decoration: none;
+}
+.footer-nav ul {
+  list-style-type: none;
+  background-color: yellow;
+  padding: 0;
+  margin: 0;
+  height: auto;
+  width: auto; 
+  overflow: hidden;
+}
+.footer-nav ul li {
+  float: left;
+}
+.footer-nav li {
+  display: inline;
+  padding: 10px;
+  line-height: 10px;
+  text-decoration: none;
+}
+/* Display changed to inline; text centered; background color added; radius' added to top of border */
+.footer-nav li a {
+  display: inline;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px 5px;
+  margin: 5px;
+  color: white;
+  font-size: 25px;
+  background-color:#20A040;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom: 1px dotted;
+}
+a:active {
+ background-color: #FBB55A; 
+ color: white;
+ font-size: bold;
+ opacity: 0.8; 
+}
+a:hover {
+  back-groundcolor: #0AEEFF;
+}
+
+/* End Bottom Navigation */ 
+
+
+/* end body/
+
+/* end page */
+
+
+
+
+
+
