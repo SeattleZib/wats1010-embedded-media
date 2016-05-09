@@ -90,7 +90,6 @@ body {
   border-bottom: 1px dotted;
 }
 a:active {
- background-color: #FBB55A; 
  color: white;
  opacity: 0.8; 
 }
@@ -120,7 +119,7 @@ a:active {
   float: left;
 }
 .social-links li {
-  display: inline;
+  display: block;
 }
 .social-links img {
   text-decoration:none;
@@ -130,7 +129,6 @@ a:active {
 }
 .social-links li a:active {
   text-decoration: none;
-  color: #FBB55A;
   width: 35px;
   height: 35px;
   padding: .5px
