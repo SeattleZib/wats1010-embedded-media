@@ -38,14 +38,14 @@ body {
   align-content: center;
 }
 /* Begin Subtitle  text alignment, color and font size */
+
+/* End Heading */
+
 #heading .subtitle {
   text-align: center;
   color: #827C7C;
   font-size: 20px;
 }
-/* End Heading */
-
-
 /* Begin navigation */
     /* Removed bullets, added styling to navigation appearance */
 
@@ -92,12 +92,9 @@ body {
 a:active {
  background-color: #FBB55A; 
  color: white;
- font-size: bold;
  opacity: 0.8; 
 }
-a:hover {
-  back-groundcolor: #0AEEFF;
-}
+
 /* End Main Navigation */
 
 
@@ -106,13 +103,13 @@ a:hover {
 #social h2 {
   font-size: 25px;
   margin: 15px;
-  padding: 5px;
+  padding: 25px;
 }
 
 /* Add styling to social media links */
     /* Changed position, removed bullets, added hover color */
  .social-links {
-  position: sticky;
+  position: left;
   list-style: none;
 }
 .social-links ul {
@@ -138,9 +135,6 @@ a:hover {
   height: 35px;
   padding: .5px
 }
-.social-links li a:hover {
-  background-color: #0AEEFF;
-} 
 
 /* End Social Media links;  */
 
@@ -148,7 +142,8 @@ a:hover {
 /* Begin #watch section */
       /* Added margins, font size, padding, and download button */
 #watch {
-  margin: 10px;
+  margin: 15px;
+  padding: 25px;
 }
 #watch h3 {
  font-size: 20px;
@@ -175,7 +170,8 @@ a:hover {
   /* Begin #listen section */
       /* Added margins, font size, padding, and download button */
  #listen {
-  margin: 10px;
+  margin: 15px;
+  padding: 25px;
 }
 #listen h3 {
  font-size: 20px;
@@ -203,27 +199,24 @@ a:hover {
 /*Begin #about section */
 
 #about {
-  margin: 20px;
-  clear: both;
+  margin: 15px;
+  padding: 25px;
 }
 #about ul li {
   list-style: none;
-  line-height: 1.25;
+  line-height: 1;
   font-size: 20px;
 }
 .icon {
   float: left;
   margin: 10px;
 }
-.lead {
-  color: blue;
-  font-size: 20px;
-  padding: 0px;
+.clearfix {
+  overflow: auto;
 }
-.lead p {
-  float: right;
-  padding: 15px; 
-  line-height: 2;
+.lead {
+  float: left;
+  margin-left: 5px;
 }
 .lead::first-letter {
   padding: 0;
@@ -231,15 +224,17 @@ a:hover {
   color: green; 
 }
 
+
+
 /* Style Weybec people */
 .weybec-people {
-  display: block;
+  display: inline;
   float: left;
   margin: 10px;
   text-align: center;
 }
 .weybec-people img {
-  display: block;
+  display: center;
   float: left;
   margin: 10px 20px 10px 10px;
   padding: 10px;
@@ -249,18 +244,22 @@ a:hover {
   margin: 20px;
 }
 .weybec-people li {
+  position: static;
   list-style: none;
-  display: inline-block;
+  display: inline;
   float: left;
   margin-left: 10px;
   margin-right: 20px;
-  padding: 30px;
+  padding: 5px;
 }
 .weybec-people p {
   margin: 10px;
   padding: 20px;
 }
 
+#content1 p {
+  clear: left;
+}
 /* End weybec people */
 
 
@@ -307,29 +306,9 @@ a:hover {
   line-height: 10px;
   text-decoration: none;
 }
-/* Display changed to inline; text centered; background color added; radius' added to top of border */
-.footer-nav li a {
-  display: inline;
-  width: 40px;
-  text-align: center;
-  text-decoration: none;
-  padding: 5px 5px;
-  margin: 5px;
-  color: white;
-  font-size: 25px;
-  background-color:#20A040;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  border-bottom: 1px dotted;
-}
-a:active {
- background-color: #FBB55A; 
- color: white;
- font-size: bold;
- opacity: 0.8; 
-}
-a:hover {
-  back-groundcolor: #0AEEFF;
+.footer.nav a {
+  padding: 10px;
+  margin: 10px;
 }
 
 /* End Bottom Navigation */ 
